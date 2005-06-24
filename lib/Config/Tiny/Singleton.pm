@@ -1,7 +1,7 @@
 package Config::Tiny::Singleton;
 use strict;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 use base qw|
 	Config::Tiny
@@ -61,8 +61,8 @@ One is to create new config-object in each packages that need
 data set in config-files. However, this will make your app's
 performance pretty bad.
 Second is to let your context-object to keep your config-object.
-But your application become larger and larger, it'll be to hard to
-let your context to handle all the configs.
+But your application become larger and larger, it'll be too hard to
+let your context to handle all configs.
 And third is, this is better, to implement singleton-pattern.
 Try that, and now you only need to call your configs instance method
 in your package where you want to use it in.
@@ -73,7 +73,7 @@ L<Config::Tiny>, L<Class::Singleton>
 
 =head1 AUTHOR
 
-Lyo Kato E<lt>rkato@localdomainE<gt>
+Lyo Kato E<lt>kato@lost-season.jpE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
